@@ -28,7 +28,13 @@
   "dependencies": {
     "@pnotify/core": "^5.2.0",
     "basiclightbox": "^5.0.4",
-    "handlebars": "^4.7.6",
-    "material-design-icons": "^3.0.1"
+    "handlebars": "^4.7.7",
+    "hbs": "^4.1.2",
+    "i": "^0.3.6",
+    "live-server": "^1.2.1",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "npm": "^7.19.1",
+    "pnotify": "^5.2.0"
   }
 }

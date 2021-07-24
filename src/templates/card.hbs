@@ -1,0 +1,51 @@
+{{!-- <div class="photo-card">
+    <img src="" alt="{{tags}}" loading="lazy" />
+    <div class="info">
+        <p class="info-item">
+            <b>{{likes}}Likes</b>
+        </p>
+        <p class="info-item">
+            <b>{{views}}Views</b>
+        </p>
+        <p class="info-item">
+            <b>{{comments}}Comments</b>
+        </p>
+        <p class="info-item">
+            <b>{{downloads}}Downloads</b>
+        </p>
+    </div>
+</div>
+ --}}
+
+{{!-- webformatURL - ссылка на маленькое изображение для списка карточек.
+largeImageURL - ссылка на большое изображение.
+tags - строка с описанием изображения. Подойдет для атрибута alt.
+likes - количество лайков.
+views - количество просмотров.
+comments - количество комментариев.
+downloads - количество загрузок. --}}
+{{#each this.hits}}
+<li class="image__gallery-item">
+    <div class="photo-card">
+        <img class="image__galery-image" src="{{webformatURL}}" alt="" data-source="{{largeImageURL}}" />
+        <div class="stats">
+            <p class="stats-item">
+                <i class="material-icons">thumb_up</i>
+                {{likes}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">visibility</i>
+                {{views}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">comment</i>
+                {{comments}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">cloud_download</i>
+                {{downloads}}
+            </p>
+        </div>
+    </div>
+</li>
+{{/each}}

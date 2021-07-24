@@ -60,7 +60,7 @@ function removePreloader() {
 
 
 import * as basicLightbox from 'basiclightbox';
-import 'basicLightbox/dist/basicLightbox.min.css';
+// import 'basicLightbox/dist/basicLightbox.min.css';
 
 const createAndopenLightBox = imgSrc => {
   const instance = basicLightbox.create(`

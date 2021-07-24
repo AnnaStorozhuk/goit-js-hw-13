@@ -1,0 +1,31 @@
+{{#each this}}
+
+<li class="gallery-item">
+    <a href="#" class="gallery-link">
+        <div class="photo-card">
+            <img src={{webformatURL}} data-source={{largeImageURL}} alt="" class="photo-card--img"/>
+
+            <div class="stats">
+                <p class="stats-item">
+                    Likes: 
+                    {{likes}}
+                </p>
+                <p class="stats-item">
+                    Views:
+                    {{views}}
+                </p>
+                <p class="stats-item">
+                    Comments:
+                    {{comments}}
+                </p>
+                <p class="stats-item">
+                    Downloads:
+                    {{downloads}}
+                </p>
+            </div>
+        </div>
+    </a>
+</li>
+
+
+{{/each}}
